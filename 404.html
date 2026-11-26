@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+  Hinweis zur Fehlerseite: Die relativen Pfade (css/style.css, images/…) funktionieren nur,
+  wenn diese 404-Seite im Hauptverzeichnis ausgeliefert wird. Liefert der Server sie auch für
+  tiefere Adressen aus (z. B. /alt/seite.html), beim Hosten eventuell auf root-relative Pfade
+  umstellen, also /css/style.css, /images/logo.svg, /index.html usw.
+-->
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seite nicht gefunden – Fehler 404 | Abenteuer Nostalgie</title>
+  <meta name="description" content="Hoppla, diese Seite gibt es nicht. Von hier aus kommen Sie schnell zurück zur Startseite, zum Programm, zu den Tickets und zu allen Infos.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0E2F3A">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="kopf">
+    <div class="rahmen kopf__innen">
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Abenteuer Nostalgie – zur Startseite" width="447" height="140"></a>
+      <nav class="hauptnavigation" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="programm.html">Programm</a></li>
+          <li><a href="story.html">Die Geschichte</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="infos.html">Infos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt" class="rahmen">
+    <section class="abschnitt fehler" aria-labelledby="titel">
+      <img src="images/fehler-404-figur.png" alt="Eine kleine orangefarbene Spielfigur aus Knete steht ratlos vor einem Wegweiser und kratzt sich am Kopf" width="600" height="600">
+      <h1 id="titel">Hoppla – diese Seite hat sich verlaufen</h1>
+      <p>Die Seite, die Sie suchen, gibt es leider nicht (mehr). Vielleicht hat sich ein Tippfehler eingeschlichen – oder die Seite ist zurück auf Start gerückt, wie bei Mensch ärgere Dich nicht.</p>
+      <p>Kein Grund zum Ärgern: Hier geht es weiter.</p>
+      <h2>Wohin möchten Sie?</h2>
+      <ul class="link-knoepfe">
+        <li><a class="knopf" href="index.html">Zur Startseite</a></li>
+        <li><a class="knopf knopf--hell" href="programm.html">Programm</a></li>
+        <li><a class="knopf knopf--hell" href="story.html">Die Geschichte</a></li>
+        <li><a class="knopf knopf--hell" href="tickets.html">Tickets</a></li>
+        <li><a class="knopf knopf--hell" href="infos.html">Infos</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="fuss rahmen">
+    <p><strong>ABENTEUER NOSTALGIE</strong> – Comic- und Spielemesse für Rentner und Senioren · Sonntag, 28. Februar 2027 · Messehallen Hamburg</p>
+    <ul>
+      <li><a href="infos.html#impressum">Impressum</a></li>
+      <li><a href="infos.html#faq">Häufige Fragen</a></li>
+      <li><a href="infos.html#bildnachweis">Bildnachweis</a></li>
+      <li><a href="infos.html#anfahrt">Anfahrt</a></li>
+    </ul>
+    <p class="studienprojekt">Studienprojekt der Kunstschule Wandsbek</p>
+  </footer>
+</body>
+</html>

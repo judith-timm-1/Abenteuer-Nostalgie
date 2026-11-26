@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tickets und Preise | Abenteuer Nostalgie Hamburg</title>
+  <meta name="description" content="Tageskarte 12 Euro, ermäßigt 8 Euro, Enkel bis 14 Jahre frei: Tickets für die Comic- und Spielemesse am 28. Februar 2027 in Hamburg bestellen.">
+  <meta name="theme-color" content="#0E2F3A">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="kopf">
+    <div class="rahmen kopf__innen">
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Abenteuer Nostalgie – zur Startseite" width="447" height="140"></a>
+      <nav class="hauptnavigation" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="programm.html">Programm</a></li>
+          <li><a href="story.html">Die Geschichte</a></li>
+          <li><a href="tickets.html" aria-current="page">Tickets</a></li>
+          <li><a href="infos.html">Infos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt" class="rahmen">
+    <section class="seitenkopf clay clay--dunkel deko-blobs" aria-labelledby="titel">
+      <h1 id="titel">Tickets für Abenteuer Nostalgie</h1>
+      <p>Einmal zahlen, den ganzen Tag bleiben: Alle Programmpunkte, die Garderobe und das Los für die Verlosung sind im Eintritt enthalten.</p>
+    </section>
+
+    <section class="abschnitt" aria-labelledby="preise">
+      <h2 id="preise">Unsere Preise</h2>
+      <ul class="raster ticketkarten tilt-raster">
+        <li class="ticketkarte clay clay--orange tilt">
+          <img src="images/icon-ticket.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
+          <h3>Tageskarte</h3>
+          <p class="preis">12 €</p>
+          <p>Für einen ganzen Tag voller Comics und Spiele, von 10 bis 18 Uhr.</p>
+          <a class="knopf knopf--hell" href="#bestellung">Tageskarte wählen</a>
+        </li>
+        <li class="ticketkarte clay clay--petrol tilt">
+          <img src="images/icon-ticket.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
+          <h3>Ermäßigt</h3>
+          <p class="preis">8 €</p>
+          <p>Für Begleitpersonen und für Menschen mit Schwerbehindertenausweis. Bitte Ausweis am Eingang zeigen.</p>
+          <a class="knopf" href="#bestellung">Ermäßigt wählen</a>
+        </li>
+        <li class="ticketkarte clay tilt">
+          <img src="images/icon-ticket.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
+          <h3>Enkelkinder</h3>
+          <p class="preis">frei</p>
+          <p>Kinder bis 14 Jahre in Begleitung ihrer Großeltern (oder Eltern) haben freien Eintritt.</p>
+          <a class="knopf" href="#bestellung">Enkelkarte wählen</a>
+        </li>
+      </ul>
+      <img src="images/ticket-3d.png" alt="Eine plastische Eintrittskarte in Orange und Petrol mit der Aufschrift Abenteuer Nostalgie" width="900" height="560" loading="lazy" decoding="async" class="ticket-bild">
+    </section>
+
+    <section class="abschnitt" aria-labelledby="bestellung">
+      <h2 id="bestellung">Tickets bestellen</h2>
+      <p>Füllen Sie das Formular in Ruhe aus. Felder mit dem Zeichen <span class="pflicht">Pflicht</span> müssen ausgefüllt werden. Lieber am Telefon? Rufen Sie uns an unter <a href="tel:+494000000000">040 000 000 00</a> (erfunden).</p>
+      <form id="ticketformular" class="formular clay clay--petrol" method="post" action="#">
+        <fieldset>
+          <legend>Ihre Angaben</legend>
+          <div class="feld">
+            <label for="name">Vor- und Nachname <span class="pflicht">Pflicht</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="feld">
+            <label for="email">E-Mail-Adresse <span class="pflicht">Pflicht</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hilfe">
+            <span class="feld-hilfe" id="email-hilfe">Zum Beispiel: gerda.petersen@beispiel.de</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ihre Tickets</legend>
+          <div class="feld">
+            <label for="ticketart">Ticketart <span class="pflicht">Pflicht</span></label>
+            <select id="ticketart" name="ticketart" required>
+              <option value="">Bitte auswählen</option>
+              <option value="tageskarte">Tageskarte – 12 €</option>
+              <option value="ermaessigt">Ermäßigt – 8 €</option>
+              <option value="enkel">Enkelkind bis 14 Jahre – frei</option>
+            </select>
+          </div>
+          <div class="feld">
+            <label for="anzahl">Anzahl der Karten <span class="pflicht">Pflicht</span></label>
+            <input id="anzahl" name="anzahl" type="number" min="1" max="10" value="1" inputmode="numeric" required aria-describedby="anzahl-hilfe">
+            <span class="feld-hilfe" id="anzahl-hilfe">1 bis 10 Karten pro Bestellung</span>
+          </div>
+          <div class="feld">
+            <label for="anmerkungen">Anmerkungen und Wünsche zur Barrierefreiheit (freiwillig)</label>
+            <textarea id="anmerkungen" name="anmerkungen" rows="4" aria-describedby="anmerkungen-hilfe"></textarea>
+            <span class="feld-hilfe" id="anmerkungen-hilfe">Zum Beispiel: Ich komme mit Rollator, ich brauche einen Platz nahe der Bühne.</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datenschutz</legend>
+          <div class="feld checkbox">
+            <input id="datenschutz" name="datenschutz" type="checkbox" required>
+            <label for="datenschutz">Ich habe die <a href="infos.html#datenschutz">Datenschutzhinweise</a> gelesen. <span class="pflicht">Pflicht</span></label>
+          </div>
+        </fieldset>
+
+        <p>Hinweis: Dies ist ein Studienprojekt. Es werden keine Daten verschickt und keine echten Karten verkauft.</p>
+        <button class="knopf" type="submit">Tickets verbindlich bestellen</button>
+        <p id="formular-status" class="formular-status" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="fuss rahmen">
+    <p><strong>ABENTEUER NOSTALGIE</strong> – Comic- und Spielemesse für Rentner und Senioren · Sonntag, 28. Februar 2027 · Messehallen Hamburg</p>
+    <ul>
+      <li><a href="infos.html#impressum">Impressum</a></li>
+      <li><a href="infos.html#faq">Häufige Fragen</a></li>
+      <li><a href="infos.html#bildnachweis">Bildnachweis</a></li>
+      <li><a href="infos.html#anfahrt">Anfahrt</a></li>
+    </ul>
+    <p class="studienprojekt">Studienprojekt der Kunstschule Wandsbek</p>
+  </footer>
+</body>
+</html>

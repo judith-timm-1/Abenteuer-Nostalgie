@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Uhr</title>
+  <defs>
+    <radialGradient id="orange" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#FFB27A"/><stop offset=".55" stop-color="#FF7A1A"/><stop offset="1" stop-color="#D95E0A"/>
+    </radialGradient>
+    <radialGradient id="petrol" cx="35%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#2C8197"/><stop offset=".6" stop-color="#1D6274"/><stop offset="1" stop-color="#0E2F3A"/>
+    </radialGradient>
+    <radialGradient id="mint" cx="35%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#E4F2F2"/><stop offset="1" stop-color="#B5D8D8"/>
+    </radialGradient>
+    <radialGradient id="creme" cx="35%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#FFF8EF"/><stop offset="1" stop-color="#F3E2CC"/>
+    </radialGradient>
+    <filter id="schatten" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#0E2F3A" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#mint)" filter="url(#schatten)"/>
+  <circle cx="32" cy="32" r="18" fill="url(#creme)" stroke="#0E2F3A" stroke-width="3"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#FF7A1A" stroke-width="4" stroke-dasharray="3 6.4" opacity=".9" transform="rotate(-90 32 32)" pathLength="100"/>
+  <path d="M32 21v11l8 5" fill="none" stroke="#0E2F3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="3" fill="#FF7A1A"/>
+</svg>
